@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Organization</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Community Organization</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Hero Section -->
+    <section>
+        <div class="container-fluid px-4 py-5 my-5 text-center">
+            <div class="lc-block mb-4">
+                <div editable="rich">
+                    <h2 class="display-2 fw-bold">Find Your <span class="text-primary">Perfect Events</span></h2>
+                </div>
+            </div>
+            <div class="lc-block col-lg-6 mx-auto mb-5">
+                <div editable="rich">
+                    <p class="lead">Quickly find out the perfect events tailored only for you</p>
+                </div>
+            </div>
+
+            <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center mb-5"> <a
+                    class="btn btn-primary btn-lg px-4 gap-3" href="#events" role="button">Find Events</a>
+            </div>
+            <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <img class="img-fluid"
+                    src="https://lclibrary.b-cdn.net/starters/wp-content/uploads/sites/15/2021/10/undraw_going_up_ttm5.svg"
+                    width="" height="783" srcset="" sizes="" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Events Section -->
+    <section id="events">
+        <h3 class="display-5">Upcoming Events</h3>
+        <div class="row gy-5 p-5">
+            <p class="lead text-center">Explore our exciting lineup of upcoming events and join the fun!</p>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card poster-card">
+                    <div class="image-container" data-toggle="modal" data-target="#exampleModalCenter"
+                        onClick="changeEventName('Rock Concert')">
+                        <img src="./assets/concert.jpeg" class="card-img-top card-image poster" alt="Theatre Play">
+                        <div class="overlay-text">
+                            <h3 class="event-title" style="color:#010c0e; font-size: 35px;">Book Now</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="event-date">
+                            <h5 class="card-title">Music DJ</h5>
+                            <span class="date-day">05</span>
+                            <span class="date-month">FEB</span>
+                            <span class="date-year">2025</span>
+                        </div>
+                        <p class="card-text">
+                            Enjoy electrifying performances and feel the energy at this amazing rock concert experience.
+                        </p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalCenter" onClick="changeEventName('Rock Concert')">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <h5 class="card-title-small-screen">Music DJ</h5>
+                <span class="date-day-small-screen">05</span>
+                <span class="date-month-small-screen">FEB</span>
+                <span class="date-year-small-screen">2025</span>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card poster-card">
+                    <div class="image-container" data-toggle="modal" data-target="#exampleModalCenter"
+                        onClick="changeEventName('Art Fair')">
+                        <img src="./assets/art_exhibition.jpg" class="card-img-top card-image poster"
+                            alt="Art Exhibition">
+                        <div class="overlay-text">
+                            <h3 class="event-title" style="color:#010c0e; font-size: 35px;">Book Now</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="event-date">
+                            <h5 class="card-title">Art Fair</h5>
+                            <span class="date-day">15</span>
+                            <span class="date-month">FEB</span>
+                            <span class="date-year">2025</span>
+                        </div>
+                        <p class="card-text">
+                            Explore a vibrant showcase of contemporary art and meet creative minds at the art fair.
+                        </p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalCenter" onClick="changeEventName('Art Fair')">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <h5 class="card-title-small-screen">Art Fair</h5>
+                <span class="date-day-small-screen">15</span>
+                <span class="date-month-small-screen">FEB</span>
+                <span class="date-year-small-screen">2025</span>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card poster-card">
+                    <div class="image-container" data-toggle="modal" data-target="#exampleModalCenter"
+                        onClick="changeEventName('Tech Seminar')">
+                        <img src="./assets/tech_seminar.jpg" class="card-img-top card-image poster" alt="Tech Seminar">
+                        <div class="overlay-text">
+                            <h3 class="event-title" style="color:#010c0e; font-size: 35px;">Book Now</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="event-date">
+                            <h5 class="card-title">Tech Meetup</h5>
+                            <span class="date-day">20</span>
+                            <span class="date-month">MAR</span>
+                            <span class="date-year">2025</span>
+                        </div>
+                        <p class="card-text">
+                            Stay ahead of the curve with exciting talks and discussions on the latest tech innovations.
+                        </p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalCenter" onClick="changeEventName('Tech Meetup')">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <h5 class="card-title-small-screen">Tech Meetup</h5>
+                <span class="date-day-small-screen">20</span>
+                <span class="date-month-small-screen">MAR</span>
+                <span class="date-year-small-screen">2025</span>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card poster-card">
+                    <div class="image-container" data-toggle="modal" data-target="#exampleModalCenter"
+                        onClick="changeEventName('Food Fest')">
+                        <img src="./assets/food_festival.jpg" class="card-img-top card-image poster"
+                            alt="Food Festival">
+                        <div class="overlay-text">
+                            <h3 class="event-title" style="color:#d6e813; font-size: 35px;">Book Now</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="event-date">
+                            <h5 class="card-title">Food Fest</h5>
+                            <span class="date-day">12</span>
+                            <span class="date-month">APR</span>
+                            <span class="date-year">2025</span>
+                        </div>
+                        <p class="card-text">
+                            Treat yourself to a culinary adventure with delicious cuisines from renowned chefs
+                            worldwide.
+                        </p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalCenter" onClick="changeEventName('Food Fest')">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <h5 class="card-title-small-screen">Food Fest</h5>
+                <span class="date-day-small-screen">12</span>
+                <span class="date-month-small-screen">APR</span>
+                <span class="date-year-small-screen">2025</span>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card poster-card">
+                    <div class="image-container" data-toggle="modal" data-target="#exampleModalCenter"
+                        onClick="changeEventName('Athletics Meet')">
+                        <img src="./assets/sports_meet.jpg" class="card-img-top card-image poster" alt="Sports Meet">
+                        <div class="overlay-text">
+                            <h3 class="event-title" style="color:#d6e813; font-size: 35px;">Book Now</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="event-date">
+                            <h5 class="card-title">Sports Meet</h5>
+                            <span class="date-day">25</span>
+                            <span class="date-month">MAY</span>
+                            <span class="date-year">2025</span>
+                        </div>
+                        <p class="card-text">
+                            Cheer on athletes and experience the excitement of competitive sports at this thrilling
+                            meet.
+                        </p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalCenter" onClick="changeEventName('Athletics Meet')">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <h5 class="card-title-small-screen">Sports Meet</h5>
+                <span class="date-day-small-screen">25</span>
+                <span class="date-month-small-screen">MAY</span>
+                <span class="date-year-small-screen">2025</span>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card poster-card">
+                    <div class="image-container" data-toggle="modal" data-target="#exampleModalCenter"
+                        onClick="changeEventName('Drama Nights')">
+                        <img src="./assets/theatre_play.jpg" class="card-img-top card-image poster" alt="Theatre Play">
+                        <div class="overlay-text">
+                            <h3 class="event-title" style="color:#d6e813; font-size: 35px;">Book Now</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="event-date">
+                            <h5 class="card-title">Drama Nights</h5>
+                            <span class="date-day">10</span>
+                            <span class="date-month">JUN</span>
+                            <span class="date-year">2025</span>
+                        </div>
+                        <p class="card-text">
+                            Witness an evening of compelling drama and brilliant performances by acclaimed theater
+                            artists.
+                        </p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalCenter" onClick="changeEventName('Drama Nights')">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <h5 class="card-title-small-screen">Drama Nights</h5>
+                <span class="date-day-small-screen">10</span>
+                <span class="date-month-small-screen">JUN</span>
+                <span class="date-year-small-screen">2025</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <section>
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="eventBookingModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="eventBookingModalTitle">Book Your Ticket</h5>
+                        <!-- <div style="display: flex; justify-content: flex-end;">
+                            <button type="button" class="close custom-close-btn" data-dismiss="modal"
+                                aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div> -->
+
+
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="eventName">Event Name</label>
+                                <input type="text" class="form-control" id="eventName" value="Live Music Concert"
+                                    disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="eventDate">Select Date</label>
+                                <input type="date" class="form-control" id="eventDate">
+                            </div>
+                            <div class="form-group">
+                                <label for="eventTime">Select Time</label>
+                                <select class="form-control" id="eventTime">
+                                    <option>2:00 PM</option>
+                                    <option>5:00 PM</option>
+                                    <option>8:00 PM</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="numTickets">Number of Tickets</label>
+                                <input type="number" class="form-control" id="numTickets" min="1" value="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="userName">Your Name</label>
+                                <input type="text" class="form-control" id="userName" placeholder="Enter your name">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="close custom-close-btn" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <button type="button" class="btn btn-primary" id="bookTicketButton"
+                            onclick='bookingConfirmation()'>Confirm Booking</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2025 Company Name. All Rights Reserved.</p>
+            <p>
+                <a href="./privacy-policy.html">Privacy Policy</a> |
+                <a href="./terms-of-service.html">Terms of Service</a>
+            </p>
+            <div class="social-icons mt-3">
+                <a href="https://www.facebook.com" target="_blank" class="mx-2 text-primary">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="mx-2 text-info">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="mx-2 text-primary">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="mx-2 text-danger">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        function bookingConfirmation() {
+            console.log("document.getElementById(userName).value", document.getElementById('userName').value);
+
+            let isValid = true;
+
+            if (document.getElementById('eventDate').value === '') {
+                document.getElementById('eventDate').style.border = '2px solid red';
+                isValid = false;
+            } else {
+                document.getElementById('eventDate').style.border = '';
+            }
+
+            if (document.getElementById('userName').value === '') {
+                document.getElementById('userName').style.border = '2px solid red';
+                isValid = false;
+            } else {
+                document.getElementById('userName').style.border = '';
+            }
+
+            if (!isValid) {
+                alert("Please fill all the fields");
+            } else {
+                alert("Booking Confirmed");
+            }
+        }
+
+        function changeEventName(eventName) {
+            document.getElementById('eventName').value = eventName;
+        }
+
+    </script>
+</body>
+
+</html>
