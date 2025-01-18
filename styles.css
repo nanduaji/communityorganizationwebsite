@@ -289,6 +289,9 @@ h3 {
 
 @media (min-width: 1200px) {
 
+    .adjust-size {
+        padding-top: 1.3rem;
+    }
 
     .card-title-small-screen,
     .date-day-small-screen,
@@ -300,6 +303,9 @@ h3 {
 
 @media (max-width: 1200px) {
 
+    .adjust-size {
+        padding-top: 1.3rem;
+    }
 
     .showOrNotShow {
         display: none;
