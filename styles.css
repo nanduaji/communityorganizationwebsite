@@ -268,13 +268,27 @@ h3 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* .event-image {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-} */
+.poster-card-events {
+    display: none
+}
+
+@media (max-width: 768px) {
+    .poster-card-events {
+        display: block;
+        width: 100%;
+        height: 100px;
+        max-width: 500px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
 
 @media (min-width: 1200px) {
+
 
     .card-title-small-screen,
     .date-day-small-screen,
@@ -285,6 +299,8 @@ h3 {
 }
 
 @media (max-width: 1200px) {
+
+
     .showOrNotShow {
         display: none;
     }
@@ -340,7 +356,7 @@ h3 {
 
     .overlay-text {
         position: absolute;
-        bottom: -100%;
+        bottom: -50%;
         left: 50%;
         transform: translateX(-50%);
         color: white;

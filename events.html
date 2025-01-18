@@ -44,110 +44,187 @@
             </div>
         </nav>
     </section>
-    <!-- Events Section -->
+    <!-- Events -->
     <section>
         <div class="events-section container">
             <h3 class="display-5">Upcoming Events</h3>
+            <!-- Latest Event -->
+            <div class="card poster-card-events" style="height: 150px;width:250px">
+                <div class="image-container" data-toggle="modal" data-target="#exampleModalCenter"
+                    onClick="changeEventName('Social Innovation Summit')">
+                    <img src="https://pbs.twimg.com/media/GX2_Ct2XgAA5P4a.jpg:large"
+                        class="card-img-top card-image poster" alt="Theatre Play" style="height:150px">
+                    <div class="overlay-text">
+                        <h3 class="event-title" style="color:#010c0e; font-size: 35px;">Book Now</h3>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"
+                        onClick="changeEventName('Social Innovation Summit')">
+                        Book Now
+                    </button>
+                </div>
+            </div>
             <div class="column">
                 <div class="col-md-4 d-none d-md-block showOrNotShow">
                     <div class="event-item main-card" style="position: sticky; top: 100px; z-index: 10;">
-                        <p class="lead" style="font-weight: bold;font-style: italic;">Latest Event</p>
+                        <p class="lead" style="font-weight: bold; font-style: italic;">Latest Event</p>
                         <div class="event-image">
-                            <img src="./assets/main-event.avif" alt="Main Event">
+                            <img src="https://pbs.twimg.com/media/GX2_Ct2XgAA5P4a.jpg:large" alt="Latest Event">
                         </div>
                         <div class="event-details">
-                            <h3>Main Event</h3>
-                            <p>Don't miss out on the main highlight of our events lineup. It's packed with activities,
-                                keynotes, and much more!</p>
-                            <p><strong>Date:</strong> Jan 25, 2025</p>
-                            <a href="#" class="btn btn-primary">Explore More</a>
+                            <h3>Innovation Summit 2025</h3>
+                            <p>Join us for the Innovation Summit 2025, where groundbreaking ideas and cutting-edge
+                                technology come together. Don’t miss your chance to be part of this exciting event!</p>
+                            <p><strong>Date:</strong> Feb 20, 2025</p>
+                            <p><strong>Venue:</strong> Tech Arena, Seattle</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModalCenter" onClick="changeEventName('Social Innovation Summit')">
+                                Book Now
+                            </button>
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
-                    <div class="col-md-6 col-lg-4 col-sm-12">
-                        <div class="event-item">
-                            <div class="event-image">
-                                <img src="./assets/event1.png" alt="Event 2">
-                            </div>
-                            <div class="event-details">
-                                <h3>Event Title 2</h3>
-                                <p>Discover new ideas and connect with like-minded individuals at this event.</p>
-                                <p><strong>Date:</strong> Feb 10, 2025</p>
-                                <a href="#" class="btn btn-outline-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-sm-12">
-                        <div class="event-item">
-                            <div class="event-image">
-                                <img src="./assets/event1.png" alt="Event 3">
-                            </div>
-                            <div class="event-details">
-                                <h3>Event Title 3</h3>
-                                <p>An enriching experience with keynote speakers and breakout sessions.</p>
-                                <p><strong>Date:</strong> Mar 5, 2025</p>
-                                <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 col-sm-12">
+                            <div class="event-item">
+                                <div class="event-image">
+                                    <img src="./assets/event1.png" alt="Event 2">
+                                </div>
+                                <div class="event-details">
+                                    <h3>Event Title 2</h3>
+                                    <p>Discover new ideas and connect with like-minded individuals at this event.</p>
+                                    <p><strong>Date:</strong> Feb 10, 2025</p>
+                                    <p><strong>Venue:</strong> Tech Hub, New York City</p>
+                                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-sm-12">
-                        <div class="event-item">
-                            <div class="event-image">
-                                <img src="./assets/event1.png" alt="Event 2">
-                            </div>
-                            <div class="event-details">
-                                <h3>Event Title 2</h3>
-                                <p>Discover new ideas and connect with like-minded individuals at this event.</p>
-                                <p><strong>Date:</strong> Feb 10, 2025</p>
-                                <a href="#" class="btn btn-outline-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-sm-12">
-                        <div class="event-item">
-                            <div class="event-image">
-                                <img src="./assets/event1.png" alt="Event 3">
-                            </div>
-                            <div class="event-details">
-                                <h3>Event Title 3</h3>
-                                <p>An enriching experience with keynote speakers and breakout sessions.</p>
-                                <p><strong>Date:</strong> Mar 5, 2025</p>
-                                <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        <div class="col-md-6 col-lg-4 col-sm-12">
+                            <div class="event-item">
+                                <div class="event-image">
+                                    <img src="./assets/event1.png" alt="Event 3">
+                                </div>
+                                <div class="event-details">
+                                    <h3>Event Title 3</h3>
+                                    <p>An enriching experience with keynote speakers and breakout sessions.</p>
+                                    <p><strong>Date:</strong> Mar 5, 2025</p>
+                                    <p><strong>Venue:</strong> Convention Center, Chicago</p>
+                                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-sm-12">
-                        <div class="event-item">
-                            <div class="event-image">
-                                <img src="./assets/event1.png" alt="Event 3">
-                            </div>
-                            <div class="event-details">
-                                <h3>Event Title 3</h3>
-                                <p>An enriching experience with keynote speakers and breakout sessions.</p>
-                                <p><strong>Date:</strong> Mar 5, 2025</p>
-                                <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        <div class="col-md-6 col-lg-4 col-sm-12">
+                            <div class="event-item">
+                                <div class="event-image">
+                                    <img src="./assets/event1.png" alt="Event 4">
+                                </div>
+                                <div class="event-details">
+                                    <h3>Event Title 4</h3>
+                                    <p>Networking opportunities with industry leaders.</p>
+                                    <p><strong>Date:</strong> Mar 20, 2025</p>
+                                    <p><strong>Venue:</strong> Business Park, Los Angeles</p>
+                                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-sm-12">
-                        <div class="event-item">
-                            <div class="event-image">
-                                <img src="./assets/event1.png" alt="Event 3">
+                        <div class="col-md-6 col-lg-4 col-sm-12">
+                            <div class="event-item">
+                                <div class="event-image">
+                                    <img src="./assets/event1.png" alt="Event 5">
+                                </div>
+                                <div class="event-details">
+                                    <h3>Event Title 5</h3>
+                                    <p>Hands-on workshops and panel discussions.</p>
+                                    <p><strong>Date:</strong> Apr 10, 2025</p>
+                                    <p><strong>Venue:</strong> Innovation Labs, Boston</p>
+                                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                                </div>
                             </div>
-                            <div class="event-details">
-                                <h3>Event Title 3</h3>
-                                <p>An enriching experience with keynote speakers and breakout sessions.</p>
-                                <p><strong>Date:</strong> Mar 5, 2025</p>
-                                <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-sm-12">
+                            <div class="event-item">
+                                <div class="event-image">
+                                    <img src="./assets/event1.png" alt="Event 6">
+                                </div>
+                                <div class="event-details">
+                                    <h3>Event Title 6</h3>
+                                    <p>Exclusive insights from world-class speakers.</p>
+                                    <p><strong>Date:</strong> Apr 25, 2025</p>
+                                    <p><strong>Venue:</strong> Grand Hall, Miami</p>
+                                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-sm-12">
+                            <div class="event-item">
+                                <div class="event-image">
+                                    <img src="./assets/event1.png" alt="Event 7">
+                                </div>
+                                <div class="event-details">
+                                    <h3>Event Title 7</h3>
+                                    <p>Experience cutting-edge technology demonstrations.</p>
+                                    <p><strong>Date:</strong> May 15, 2025</p>
+                                    <p><strong>Venue:</strong> Tech Arena, Seattle</p>
+                                    <a href="#" class="btn btn-outline-primary">Learn More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+    </section>
+    <!-- Modal -->
+    <section>
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="eventBookingModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="eventBookingModalTitle">Book Your Ticket</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="eventName">Event Name</label>
+                                <input type="text" class="form-control" id="eventName" value="Live Music Concert"
+                                    disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="eventDate">Select Date</label>
+                                <input type="date" class="form-control" id="eventDate">
+                            </div>
+                            <div class="form-group">
+                                <label for="eventTime">Select Time</label>
+                                <select class="form-control" id="eventTime">
+                                    <option>2:00 PM</option>
+                                    <option>5:00 PM</option>
+                                    <option>8:00 PM</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="numTickets">Number of Tickets</label>
+                                <input type="number" class="form-control" id="numTickets" min="1" value="1">
+                            </div>
+                            <div class="form-group">
+                                <label for="userName">Your Name</label>
+                                <input type="text" class="form-control" id="userName" placeholder="Enter your name">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="close custom-close-btn" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <button type="button" class="btn btn-primary" id="bookTicketButton"
+                            onclick='bookingConfirmation()'>Confirm Booking</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
     <!-- Footer Section -->
     <footer class=" footer">
         <div class="container text-center">
@@ -178,6 +255,45 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script>
+        function bookingConfirmation() {
+            console.log("document.getElementById(userName).value", document.getElementById('userName').value);
+
+            let isValid = true;
+
+            if (document.getElementById('eventDate').value === '') {
+                document.getElementById('eventDate').style.border = '2px solid red';
+                isValid = false;
+            } else {
+                document.getElementById('eventDate').style.border = '';
+            }
+
+            if (document.getElementById('userName').value === '') {
+                document.getElementById('userName').style.border = '2px solid red';
+                isValid = false;
+            } else {
+                document.getElementById('userName').style.border = '';
+            }
+
+            if (!isValid) {
+                alert("Please fill all the fields");
+            } else {
+                alert("Booking Confirmed");
+            }
+        }
+        function changeEventName(eventName) {
+            document.getElementById('eventName').value = eventName;
+        }
+    </script>
 </body>
 
 </html>
