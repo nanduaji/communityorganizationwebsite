@@ -287,6 +287,18 @@ h3 {
     }
 }
 
+.media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.media img {
+    margin-bottom: 1rem;
+}
+
 @media (min-width: 1200px) {
 
     .adjust-size {
@@ -302,6 +314,23 @@ h3 {
 }
 
 @media (max-width: 1200px) {
+
+    .media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .media img {
+        margin-bottom: 1rem;
+    }
+
+
+    .custom-avatar {
+        display: none;
+    }
 
     .adjust-size {
         padding-top: 1.3rem;
