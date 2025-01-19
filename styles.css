@@ -310,7 +310,15 @@ h3 {
     text-align: center;
 }
 
+.small-screen-latest-event-text {
+    display: none;
+}
+
 @media (max-width: 768px) {
+    .small-screen-latest-event-text {
+        display: block;
+    }
+
     .poster-card-events {
         display: block;
         width: 100%;
@@ -344,6 +352,8 @@ h3 {
 .large-screen {
     margin-top: -150px;
 }
+
+
 
 @media (min-width: 1200px) {
 
