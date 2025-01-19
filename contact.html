@@ -140,6 +140,32 @@
             var myModal = new bootstrap.Modal(document.getElementById('exampleModalCenter'));
             myModal.show();
         }
+        var nameInputField = document.getElementById('name');
+
+        nameInputField.addEventListener('mouseover', function () {
+            nameInputField.focus();
+        });
+        nameInputField.addEventListener('mouseleave', function () {
+            nameInputField.blur();
+        });
+
+        var phoneInputField = document.getElementById('phone');
+
+        phoneInputField.addEventListener('mouseover', function () {
+            phoneInputField.focus();
+        });
+        phoneInputField.addEventListener('mouseleave', function () {
+            phoneInputField.blur();
+        });
+
+        var emailInputField = document.getElementById('email');
+
+        emailInputField.addEventListener('mouseover', function () {
+            emailInputField.focus();
+        });
+        emailInputField.addEventListener('mouseleave', function () {
+            emailInputField.blur();
+        });
 
     </script>
 </body>
